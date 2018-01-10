@@ -11,7 +11,7 @@ Take a file as a parameter and show the next things :
 - The most used word (and it's quantity)
 <hr>
 C - Aspire contact
-1. Make a program that take as parameter the name of 1 file. This file will contain a list or URL's
-    -> Show the number of @ that are in the website (inside the HTML code)
-2. Do the same thing, but with **multi-threading**, with Goroutines. (Like 1 Goroutine by URL)
-BONUS : Your program will now show a list of found mails (in the alphabetic order) inside the URL, and finish with a list of found emails (See Regexp)
+1. Make a program that take as parameter the name of 1 file. This file will contain a list or URL's<br>
+    -> Show the number of @ that are in the website (inside the HTML code)<br>
+2. Do the same thing, but with **multi-threading**, with Goroutines. (Like 1 Goroutine by URL)<br>
+BONUS : Your program will now show a list of found mails (in the alphabetic order) inside the URL, and finish with a list of found emails (See Regexp)<br>
