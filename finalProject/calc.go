@@ -8,9 +8,17 @@ import(
 
 func main(){
 	for i := 1; i < len(os.Args); i++{
-		var calc string
 		args := os.Args[i]
-		calc, _ = strconv.Atoi(args)
+		fmt.Println(args)
+		convArgs, _ := strconv.Atoi(args)
+		calc := mult(convArgs)
 		fmt.Println(calc)
 	}
+}
+
+func mult(nbr ...int)(answer int){
+	for j := 0; j < len(nbr); j++{
+		answer = nbr[j] * nbr[j+1]
+	}
+	return
 }
