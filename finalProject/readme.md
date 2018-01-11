@@ -5,10 +5,10 @@ A - Mini Calculatrice
 3. Take as 1st args, the nature of the operations (if it's a *, a -, a / or a +)
 <hr>
 B - File stat<br>
-Take a file as a parameter and show the next things :
-- The file weight
-- The less used word (and it's quantity)
-- The most used word (and it's quantity)
+Take a file as a parameter and show the next things :<br>
+- The file weight<br>
+- The less used word (and it's quantity)<br>
+- The most used word (and it's quantity)<br>
 <hr>
 C - Aspire contact<br>
 1. Make a program that take as parameter the name of 1 file. This file will contain a list or URL's<br>
