@@ -7,13 +7,10 @@ import(
 )
 
 func main(){
-	var a string
-	var b string
-	var c int
-	a = os.Args[1]
-	b = os.Args[2]
-	mult, _ := strconv.Atoi(a)
-	mult2, _ := strconv.Atoi(b)
-	c = mult * mult2
-	fmt.Println(c)
+	for i := 1; i < len(os.Args); i++{
+		var calc string
+		args := os.Args[i]
+		calc, _ = strconv.Atoi(args)
+		fmt.Println(calc)
+	}
 }
