@@ -16,6 +16,36 @@ func mult(nums ...int)  {
     fmt.Println(result)
 }
 
+func add(nums ...int){
+	result := 0
+    total := 1
+    for _, num := range nums {
+        result = total + num
+        total = result
+    }
+    fmt.Println(result)
+}
+
+func sub(nums ...int){
+	result := 0
+    total := 1
+    for _, num := range nums {
+        result = total - num
+        total = result
+    }
+    fmt.Println(result)
+}
+
+func div(nums ...int){
+	result := 0
+    total := 1
+    for _, num := range nums {
+        result = total / num
+        total = result
+    }
+    fmt.Println(result)
+}
+
 func main() {
     var err error
     var d [] int
@@ -30,5 +60,13 @@ func main() {
         d = append(d, nums[i])
     }
     num := d
-    mult(num...)
+    if os.Args[1] == "*"{
+		mult(num...)
+	} else if os.Args[1] == "+"{
+		add(num...)
+	} else if os.Args[1] == "-"{
+		sub(num...)
+	} else {
+		div(num...)
+    }
 }
