@@ -1,24 +1,34 @@
 package main
 
-import(
-	"fmt"
-	"os"
-	"strconv"
+import (
+    "fmt"
+    "os"
+    "strconv"
 )
 
-func main(){
-	for i := 1; i < len(os.Args); i++{
-		args := os.Args[i]
-		fmt.Println(args)
-		convArgs, _ := strconv.Atoi(args)
-		calc := mult(convArgs)
-		fmt.Println(calc)
-	}
+func mult(nums ...int)  {
+    result := 0
+    total := 1
+    for _, num := range nums {
+        result = total * num
+        total = result
+    }
+    fmt.Println(result)
 }
 
-func mult(nbr ...int)(answer int){
-	for j := 0; j < len(nbr); j++{
-		answer = nbr[j] * nbr[j+1]
-	}
-	return
+func main() {
+    var err error
+    var d [] int
+    var args= os.Args[1:]
+    nums := make([]int, len(args))
+    for i := 0; i < len(args); i++ {
+        nums[i], err = strconv.Atoi(args[i]);
+        if err != nil {
+            panic(err)
+        }
+        strconv.Atoi(args[i])
+        d = append(d, nums[i])
+    }
+    num := d
+    mult(num...)
 }
