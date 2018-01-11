@@ -4,7 +4,7 @@ A - Mini Calculatrice
 2. Same thing as the 1st one, but with no number limit
 3. Take as 1st args, the nature of the operations (if it's a *, a -, a / or a +)
 <hr>
-B - File stat
+B - File stat<br>
 Take a file as a parameter and show the next things :
 - The file weight
 - The less used word (and it's quantity)
