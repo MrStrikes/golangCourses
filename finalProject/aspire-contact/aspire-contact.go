@@ -17,7 +17,6 @@ func main() {
 	defer inFile.Close()
 	scanner := bufio.NewScanner(inFile)
 	scanner.Split(bufio.ScanLines)
-	fmt.Printf("HTML code of %s \n", scanner.Text())
 	for scanner.Scan() {
 		wg.Add(1)
 		go multi(scanner.Text())
@@ -37,7 +36,7 @@ func multi(text string) {
 	}
 	var aroNum int
 	aroNum = bytes.Count([]byte(html), []byte("@"))
-	fmt.Printf("%s\n", html)
-	fmt.Printf("The number of @ is %d", aroNum)
+	fmt.Println(text)
+	fmt.Printf("The number of @ is %d\n", aroNum)
 	wg.Done()
 }
